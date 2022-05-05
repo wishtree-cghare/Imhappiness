@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Caveat', cursive; */
+}
+h2{
+    font-size: 60px;
+    font-family: Caveat;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.77
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+
+}
+
+.nav-logo{
+    flex: 0 0 25%;
+    max-width: 25%;
+   
+}
+
+.nav-list{
+    flex: 0 0 75%;
+    max-width: 75%;
+   
+}
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding-left:42px;
+    
+   
+}
+
+
+.nav-links a{
+    text-decoration: none;
+     color:#e769c0;
+}
+.nav-iamhappiness a{
+    padding: 0 0;
+   
+}
+
+.header-section{
+    background: rgba(235, 161, 212, 0.18);
+}
+
+.header{
+    position: relative;
+}
+
+.covid-health{
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+}
+.Lets-make-world {
+    width: 431px;
+    height: auto;
+    margin: 43px 87px 29px 109px;
+    font-family: Raleway;
+    font-size: 52px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 2.88px;
+    text-align: left;
+    color: #a52929;
+    text-transform: uppercase;
+    padding-top:75px ;
+  }
+
+  .Lets-make-world-shadow {
+    width: 434px;
+    height: auto;
+    margin: 44px 83px 25px 110px;
+  }
+  .a-happier-place {
+    width: 366px;
+    height: auto;
+    margin: 20px 64px 38px 109px;
+    background-image: linear-gradient(to top, #7c82ea, #e769c0), linear-gradient(to bottom, #a52929, #a52929);
+    font-family: Caveat;
+    font-size: 70px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-align: left;
+    color: #a52929;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  }
+
+  .header{
+      display: flex;
+  }
+
+  .header-img{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .header-data{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+ 
+
+  .hello-happiness-wrapper{
+      margin-top: 59px;
+  }
+
+  .dash-line-wrapper{
+    position: relative;
+
+  }
+  .dash-line{
+      
+      width: 60px;
+      height: 5px;
+      position: absolute;
+      background-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000);
+      top:80px;
+      left: 50%;
+      transform: translateX(-50%);
+     
+
+}
+  .hello-happiness-wrapper h2{
+      padding-bottom: 69px;
+      margin: 0 auto;
+      
+  
+  }
+
+  .hello-happiness-wrapper h2,
+  .hello-happiness-wrapper h3
+
+  {
+     font-family: 'Caveat', cursive;
+      text-align: center;
+
+
+  }
+  .hello-happiness-contents .info1 h3{
+   max-width: 194px;
+   margin: 0 auto 23px auto;
+    height: auto;
+    background-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000);
+    font-family: Caveat;
+    font-size: 36px;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  }
+
+  .Aim-of-Hello-Happiness{
+    max-width: 282px;
+   margin: 0 auto 23px auto;
+
+    height: auto;
+    /* margin: 40px 274px 23px 129px; */
+    background-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000);
+    font-family: Caveat;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hello-happiness-contents{
+      display: flex;
+
+  }
+
+  .info1,
+  .info2{
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+
+  .hello-happiness-contents .info1 p{
+      max-width: 509px;
+      text-align: center;
+  }
+
+  .hello-happiness-contents .info2 p{
+      max-width: 502px;
+      text-align: center;
+  }
+
+  .hello-happiness-contents-bottom p{
+      max-width: 1140px;
+      margin-top: 36px;
+  }
+
+.ambassador-member{
+    position: relative;
+   
+}
+
+.ambassador-member-name{
+    position: absolute;
+   
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000);
+    bottom: 0;
+    width: 100%;
+    object-fit: cover;
+    
+   
+}
+
+.ambassador-member-name h5{
+    font-weight: bold;
+   
+}
+.ambassador-member {
+  margin: 0 15px;
+}
+
+
+.happiness-ambassadors-section{
+    background: #f9f9ff;
+    padding: 60px 0
+    
+
+    ;
+}
+.happiness-ambassadors-wrapper h2{
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.ambassadors-members-container{
+    margin-top: 40px;
+}
+
+.happiness-ambassadors-wrapper .owl-carousel .owl-item .ambassador-member:hover{
+   
+    transform: translateY(-20px);
+    border: 5px solid #a52929;
+    transition: 0.5s ease-out;
+    margin-top: 20px;
+    padding: 10px;
+   
+    
+   
+}
+
+
+
+
+
+
+.owl-theme .owl-nav [class*=owl-] {
+    background: #FFFFFF;
+   
+    
+}
+
+.owl-theme .owl-nav [class*=owl-] img{
+    width: 10px;
+}
+
+.mental-health-pandemic-section{
+    margin-top: 59px;
+}
+.mental-health-pandemic-wrapper h2{
+    text-align: center;
+}
+.mental-health-pandemic-data{
+    display: flex;
+}
+
+.mental-health-pandemic-info,
+.mental-health-pandemic-banner{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.mental-health-pandemic-banner img{
+    max-width: 550px;
+   max-height: auto;
+}
+
+.mental-health-pandemic-info p{
+    margin-top: 40px;
+    /* padding-right: 97px; */
+   max-width: 565px;
+}
+.mental-health-pandemic-bottom-info{
+    margin-top: 36px;
+}
+
+
+.change-maker-campaign-section{
+    background: #fff8fd;
+    padding: 61px 0;
+    margin-top: 59px;
+
+
+}
+
+.change-maker-campaign-wrapper h2{
+    text-align: center;
+}
+
+.change-maker-campaign-data{
+    display: flex;
+}
+
+.change-maker-campaign-info,
+.change-maker-campaign-banner{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.change-maker-campaign-data{
+    margin-top: 38px;
+}
+
+.change-maker-campaign-banner img{
+    margin-left: 151px;
+    max-width: 266px;
+  max-height: auto;
+}
+
+
+
+.change-maker-campaign-section{
+    background: #fff8fd;
+    padding: 61px 0;
+    margin-top: 59px;
+
+
+}
+
+.about-happiness-section{
+
+    padding: 60px 0;
+}
+.about-happiness-wrapper h2{
+    text-align: center;
+}
+
+.about-happiness-data{
+    display: flex;
+}
+
+.about-happiness-info,
+.about-happiness-banner{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about-happiness-data{
+    margin-top: 40px;
+}
+
+.about-happiness-banner img{
+    margin-left: 151px;
+    max-width: 338px;
+  max-height: auto;
+}
+
+.team-members-section{
+    background: #f9f9ff;
+    padding: 60px 0;
+}
+
+.team-members-wrapper h2{
+    text-align: center;
+}
+
+.team-member-data{
+    display: flex;
+    margin-top: 39px;
+}
+
+.team-member-photo{
+
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+.team-member-info{
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding-left: 51px;
+   
+}
+.team-member-photo img{
+    border-radius: 500px;
+}
+
+
+.team-member-info h3{
+    margin-top: 0;
+    margin-bottom: 31px;
+    max-width: 197px;
+    background-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000);
+    font-family: Caveat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.team-member-info h5{
+    margin-bottom: 18px;
+    color: #e769c0;
+}
+.happiness-hack{
+    color: #7c82ea;
+}
+
+
+.in-association-section{
+    padding: 59px 0;
+}
+.association-wrapper h2{
+    text-align: center;
+}
+.association-container{
+    margin-top: 40px;
+}
+.association-member{
+    width: 350px;
+    height: 150px;
+    background: #f9f9ff;
+    position: relative;
+    border: 2px solid lightgray;
+}
+
+
+.association-member img{
+    position: absolute;
+    max-width: 130px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.gallery-wrapper h2{
+    text-align: center;
+}
+.gallery-section{
+    background: #fff8fd;
+    padding: 62px 0;
+}
+
+.gallery-container{
+    margin-top: 40px;
+    padding-top: 30px;
+   
+}
+.gallery-member{
+    max-width: 263px;
+    height: auto;
+   
+}
+
+.gallery-member img{
+    padding: 5px 5px;
+}
+
+.snapshot-div{
+    text-align: center;
+}
+.snapshot{
+    font-size: 24px;
+    max-width: 373px
+
+}
+
+
+.gallery-wrapper .owl-carousel .owl-item img:hover{
+   
+    transform: translateY(-20px);
+    border: 5px solid #a52929;
+    transition: 0.5s ease-out;
+    margin-top: 20px;
+   
+}
+
+
+.footer-section{
+    background-color: #000;
+    color: #FFFFFF;
+    padding: 60px 1168px 60px 150px;
+}
+
+  .footer{
+      display: flex;
+    
+  }
+
+  .footer-logo{
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .footer-links,
+  .footer-contact-us{
+    flex: 0 0 35%;
+    max-width: 35%;
+   
+  }
+
+
+
+  .footer-links li,
+  .footer-contact-us li
+  {
+      list-style-type: none;
+  }
+
+  .footer-line{
+      width: 300px;
+      height: 1px;
+      background-color: #e769c0;
+  }
+
+  .font-awesome-icon{
+     color: #a52929;
+  }
+
+  .footer li{
+      padding: 5px 0;
+  }
+  .footer-social-icons{
+      display: flex;
+  }
+
+  .footer-social-icons .icon1,
+  .footer-social-icons .icon2,
+  .footer-social-icons .icon3{
+      padding-right:25px ;
+      padding-top: 40px;
+  }
+
+  .footer-links h5,
+  .footer-contact-us h5
+  {
+      font-weight: 900;
+  }
+
+  .copyright-section{
+
+  background: #000 0% 0% no-repeat padding-box;
+  }
+
+  .copyright-section .container{
+      max-width: 100%;
+  }
+
+  .footer-copyright{
+  
+  color: #FFFFFF;
+  text-align: center;
+  height: 40px;
+  padding: 10px;
+  }
+
+
+
+  /* collapsible */
+
+  .collapsible {
+    /* background-color: #777; */
+    /* color: white; */
+    cursor: pointer;
+    /* padding: 18px; */
+    width: 100%;
+    border: none;
+    /* text-align: left; */
+    outline: none;
+    font-size: 15px;
+    display: inline;
+    
+  }
+  
+  .collapsible:hover {
+    background-color: #555;
+  }
+   
+  .content {
+    padding: 0 18px;
+    display: none;
+    width: 280%;
+    overflow: hidden;
+
+   
+    /* background-color: #f1f1f1; */
+  }
+
+  .content p{
+      font-size: 12px;
+  }
+
+  .footer-icon{
+      color: #a52929;
+  }

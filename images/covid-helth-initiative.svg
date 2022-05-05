@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="88" height="51">
+    <text font-family="Raleway" fill="#A94339" font-size="16" y="51"> <tspan dy="-38.4">COVID</tspan><tspan x="0" dy="1.2em">HEALTH</tspan><tspan x="0" dy="1.2em">INITIATIVE</tspan>
+</text>
+    <path fill-rule="evenodd" fill="#A94339" d="M78.999 33.999c-4.709 0-9-4.029-9-9 0-4.709 4.291-9 9-9 4.971 0 9 4.291 9 9a9 9 0 0 1-9 9zm0-13a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+</svg>
