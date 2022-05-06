@@ -8,6 +8,9 @@
     <title>Imhappiness</title>
 </head>
 
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png">
+
 <!-- font family -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,27 +51,27 @@
 
                     <ul class="nav-links" id="nav-links">
                         <li>
-                            <a href="index.html" class="nav-home link" title="Home">
+                            <a href="#home" class="nav-home link" title="Home">
                                 Home
                             </a>
 
                         </li>
-                        <li><a href="guests.html" class="nav-about link" title="Guests">
+                        <li><a href="#ambassadors" class="nav-about link" title="Guests">
                                 Guests
 
                             </a>
                         </li>
-                        <li><a href="about.html" class="nav-influencers link" title="About Us">
+                        <li><a href="#team-members-sec" class="nav-influencers link" title="About Us">
                                 About Us
 
                             </a>
                         </li>
-                        <li><a href="gallery.html" class="nav-brands-agencies link" title="Gallery">
+                        <li><a href="#gallery" class="nav-brands-agencies link" title="Gallery">
 
                                 Gallery
                             </a>
                         </li>
-                        <li class="nav-iamhappiness"><a href="Imhappiness.html" class="nav-full-service-campaigns link"
+                        <li class="nav-iamhappiness"><a href="#Imhappiness" class="nav-full-service-campaigns link"
                                 title="Imhappiness">Imhappiness
 
 
@@ -86,8 +89,37 @@
     </nav>
     <!-- navbar end -->
 
+     <!-- bottom navbar -->
+
+  <div class="bottom-nav">
+
+
+    <ul class="bottom-nav-links" id="bottom-nav-links">
+      <li><a href="index.html" class="bottom-nav-home">
+          <img src="images/home (5).jpg">
+        </a></li>
+      <div class="line"></div>
+
+
+      <li><a href="contact.html" class="bottom-nav-location">
+          <img src="images/location.jpg">
+        </a></li>
+      <div class="line"></div>
+
+      <li><a href="tel:12345678" class="bottom-nav-phone">
+          <img src="images/phone-call.jpg">
+        </a></li>
+      <div class="line"></div>
+
+      <li id="nav-btn"><a class="bottom-nav-union">
+          <img src="images/Union 6.jpg">
+        </a></li>
+
+    </ul>
+  </div>
+
     <!-- home page -->
-    <section class="header-section">
+    <section class="header-section" id="home">
         <div class="container">
             <div class="header">
                 <div class="header-img">
@@ -105,7 +137,7 @@
                     </div>
                 </div>
                 <div class="covid-health">
-                    <img src="images/covid-helth-initiative.svg" alt="image">
+                    <img src="images/covid-helth-initiative.png" alt="image">
                 </div>
             </div>
         </div>
@@ -153,21 +185,29 @@
 
 
     <!-- happiness ambassadors -->
-    <section class="happiness-ambassadors-section">
-        <div class="container">
+    <section class="happiness-ambassadors-section" id="ambassadors">
+        <!-- <div class="container"> -->
             <div class="happiness-ambassadors-wrapper dash-line-wrapper">
                 <h2>Happiness Ambassadors</h2>
                 <div class="dash-line"></div>
 
                 <div class="ambassadors-members-container">
+
                     <div class="ambassadors-members-wrapper owl-carousel owl-theme" id="ambassadors-members">
 
-                        <div class="ambassador-member">
-                            <div class="ambassador-member-name">
-                                <h5>Daniel Weber</h5>
-                            </div>
+                        <div class="ambassador-members">
+                            <div class="ambassador-member">
 
-                          <img src="images/ambassadors-mamber1.png">
+                                <img src="images/ambassadors-mamber1.png" alt="image">
+
+                                <div class="ambassador-member-name">
+                                    <h5>Daniel Weber</h5>
+                                </div>
+
+                            </div>
+                            
+                            
+                           
               
                         </div>
 
@@ -190,8 +230,21 @@
                         <div class="ambassador-member">
                             <div class="ambassador-member-name">
                                 <h5>Osman Mir</h5>
+                               
                             </div>
                           <img src="images/ambassadors-mamber4.png" alt="img">
+              
+                        </div>
+
+                        <div class="ambassador-member">
+                            <div class="ambassador-member-name ranveer-brar">
+                                <h5>Ranveer Brar 
+                                    <br>
+                                    <span class="chef">Chef</span></h5>
+                               
+                            </div>
+                          <img src="images/ambassadors-mamber2.png" alt="img"
+                          >
               
                         </div>
 
@@ -368,7 +421,7 @@
 
                         
                       </div>
-                </div>
+                <!-- </div> -->
             </div>
         </div>
     </section>
@@ -376,7 +429,7 @@
     <!-- end happiness ambassadors -->
 
 
-    <section class="mental-health-pandemic">
+    <section class="mental-health-pandemic-section">
         <div class="container">
             <div class="mental-health-pandemic-wrapper dash-line-wrapper">
                 <h2>Mental Health and The Pandemic</h2>
@@ -391,7 +444,9 @@
                 </div>
 
                 <div class="mental-health-pandemic-banner">
+                    <!-- <div class="mental-health-image"> -->
                     <img src="images/call-from-celebrity.png" alt="img">
+                <!-- </div> -->
                 </div>
             </div>
                 <div class="mental-health-pandemic-bottom-info">
@@ -434,7 +489,7 @@
     </section>
 
 
-    <section class="about-happiness-section">
+    <section class="about-happiness-section" id="Imhappiness">
         <div class="container">
             <div class="about-happiness-wrapper dash-line-wrapper">
                 <h2>About Im Happiness</h2>
@@ -466,7 +521,7 @@
         </div>
     </section>
 
-    <section class="team-members-section">
+    <section class="team-members-section" id="team-members-sec">
         <div class="container">
         <div class="team-members-wrapper dash-line-wrapper">
             <h2>Team Members</h2>
@@ -669,8 +724,8 @@
     <!-- Gallery -->
 
 
-    <section class="gallery-section">
-        <div class="container">
+    <section class="gallery-section" id="gallery">
+        <!-- <div class="container"> -->
             <div class="gallery-wrapper dash-line-wrapper">
                 <h2>Gallery</h2>
                 <div class="dash-line"></div>

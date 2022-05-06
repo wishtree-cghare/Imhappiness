@@ -19,40 +19,11 @@ $(function(){
   $('.link').each(function(){
       if ($(this).prop('href') == window.location.href) {
           $(this).css({
-            "color":"#FC3990",
-            "border-bottom":"2px solid #FC3990 "
+            "color":"#e769c0",
+            "border-bottom":"2px solid  #e769c0"
             
           })
       }
-
-      if(window.location.pathname === '/contact.html'){
-        $('.nav-contact').css({
-          "color":"#FFFFFF",
-          "background":"#FC3990"
-
-        })
-
-        $('.nav-contact').hover(function(){
-          $(this).css({
-           
-
-          "color": "#FFFFFF",
-          "background":"#22C6F9"
-
-          
-          });
-        }, 
-        
-        function(){
-        $(this).css({
-         
-          "color":"#FFFFFF",
-          "background":"#FC3990"
-
-          
-        });
-      })
-    }
   })
 })
     
@@ -77,7 +48,7 @@ for (i = 0; i < coll.length; i++) {
 
 $(function () {
   $("#ambassadors-members").owlCarousel({
-    items:4,
+    items:5,
     autoplay: false,
     smartSpeed: 700,
     loop: true,
@@ -136,7 +107,7 @@ $(function () {
 
 $(function () {
   $("#gallery-members").owlCarousel({
-    items:4,
+    items:5,
     autoplay: true,
     smartSpeed: 200,
     loop: true,
