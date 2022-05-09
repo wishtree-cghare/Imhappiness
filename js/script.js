@@ -58,7 +58,7 @@ $(function () {
     ],
     responsive: {
       360: {
-        items: 1,
+        items: 2,
         nav: true,
         dots:false
       },
@@ -67,14 +67,14 @@ $(function () {
         nav: true,
         dots:false
       },
-      650: {
-        items: 2,
+    
+      550: {
+        items: 3,
         nav: true,
         dots:false
       },
-     
-      1000: {
-        items: 3,
+      850: {
+        items: 5,
         nav: true,
       }
     }
@@ -120,25 +120,24 @@ $(function () {
       "<img src='images/arrow-2.png'>",
     ],
     responsive: {
-
       360: {
-        items: 1,
-        nav: true,
-        dots:false
-      },
-        500: {
         items: 2,
         nav: true,
         dots:false
       },
-      650: {
+      400: {
         items: 2,
         nav: true,
         dots:false
       },
-     
-      1000: {
+    
+      550: {
         items: 3,
+        nav: true,
+        dots:false
+      },
+      850: {
+        items: 5,
         nav: true,
       }
     }
