@@ -39,14 +39,88 @@ p{
     padding: 0 15px;
 }
 
+.sidebar{
+    display: none;
+  }
+
+
+ /* ------------------
+        sidebar
+  ----------------------*/
+
+
+  .sidebar{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 9999;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+   
+  } 
+  .sidebar-links{
+      list-style-type: none;
+      text-align: left;
+      
+  } 
+  
+  .sidebar-links li{
+    margin-bottom: 20px;
+  }
+  .sidebar-links a{
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+  }
+
+.sidebar-contact-btn{
+  background:none;
+  border: none;
+}
+  .close-btn{
+      position: absolute;
+      top:1rem;
+      right: 1rem;
+      font-size: 2rem;
+      background: transparent;
+      border: transparent;
+      color:#e769c0;
+      cursor: pointer;
+
+  }
+  
+
+  .show-sidebar {
+
+    transform: translateX(0);
+
+  
+}
+
 .navbar{
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
     align-items: center;
     margin-bottom: 15px;
-    /* display: none; */
+   
+}
 
+.nav {
+	background-color: #ffffff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+    overflow: hidden;
+    z-index: 9999;
 }
 
 .nav-logo{
@@ -80,9 +154,9 @@ p{
     display: none;
   }
   
-  .sidebar{
+  /* .sidebar{
     display: none;
-  }
+  } */
 .nav-links a{
     text-decoration: none;
      color:#e769c0;
@@ -92,11 +166,18 @@ p{
    
 }
 
-.nav-links .active{
+ .nav-links .active{
   
-    color: #e769c0;
-    border-bottom: 2px solid linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000,#000);
-   
+    color: #7c82ea;
+    font-weight: bold;
+    
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, #7c82ea,#e769c0);
+    /* border-image: linear-gradient(to right, #7c82ea, #e769c0), linear-gradient(to left, #000, #000); */
+
+    border-image-slice: 1;
+    width:100%;
+    
   }
   
 
@@ -244,23 +325,26 @@ p{
   .hello-happiness-contents{
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
 
   }
 
   .info1,
   .info2{
-      flex: 0 0 50%;
+      flex: 0 0 calc(50% - 52px);
       max-width: 50%;
   }
 
   .hello-happiness-contents .info1 p{
-      max-width: 509px;
+      /* max-width: 509px; */
       text-align: center;
+    
   }
 
   .hello-happiness-contents .info2 p{
-      max-width: 502px;
+      /* max-width: 502px; */
       text-align: center;
+      
   }
 
   .hello-happiness-contents-bottom p{
@@ -279,7 +363,7 @@ p{
 
 }
 .ambassador-member img{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .ambassador-member-name{
@@ -290,15 +374,12 @@ p{
     bottom:0;
     left: 0;
     right: 0;
-    padding: 15px 0;
-    
-    /* display: none; */
-   
-   
+    padding: 10px 0;
+    /* max-height: 50px; */
 }
 
 .ranveer-brar{
-    padding: 10px 0;
+    max-height: 40px;
 }
 
 
@@ -431,7 +512,7 @@ p{
 }
 
 .change-maker-campaign-banner img{
-    padding-left: 130px;
+    padding: 0 65px;
 }
 
 
@@ -740,7 +821,20 @@ p{
     }
   
 }
+@media screen and (max-width : 1050px) {
 
+    .hello-happiness-contents .info1 p{
+        max-width: 450px;
+        text-align: center;
+    }
+  
+    .hello-happiness-contents .info2 p{
+        max-width: 450px;
+        text-align: center;
+    }
+    
+   
+}
 @media screen  and (max-width : 890px){
 
     .Lets-make-world{
@@ -878,8 +972,57 @@ p{
 @media screen  and (max-width : 550px){
 
     .Lets-make-world{
-        margin: -15px 47px 29px 20px;
+        margin: -15px 0 29px 0;
+        text-align: center;
+        max-width: 100%;
+        
+    }
+
+    .a-happier-place{
+
+        margin: 20px 0 38px 0;
+        text-align: center;
+        max-width: 100%;
+    }
+  
+   
+    
+}
+@media screen  and (max-width : 500px){
+
+    .Lets-make-world{
+        margin: 10px 47px 29px 20px;
        
+    }
+  
+   
+    
+}
+
+@media screen  and (max-width : 481px){
+
+    .Lets-make-world{
+        margin: 20px 20px 29px 20px;
+        font-size: 30px;
+       
+    }
+    .Lets-make-world{
+        font-size: 30px;
+    }
+  
+   
+    
+}
+@media screen  and (max-width : 455px){
+
+    .Lets-make-world{
+        margin: 20px 20px 29px 0;
+        font-size: 30px;
+       
+    }
+    .Lets-make-world{
+        font-size: 30px;
+        margin-left: 0;
     }
   
    
@@ -935,15 +1078,26 @@ p{
 
 }
 
-@media screen  and (max-width : 550px){
-
+@media screen  and (max-width : 750px){
     .Lets-make-world{
-        font-size: 35px;
+        margin: -15px 0 29px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 52px;
+
+       
     }
 
     .a-happier-place{
-        font-size: 40px;
+
+        margin: 20px 0 38px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 50px;
+
     }
+
+ 
     .nav-links li {
        
         padding-left:15px;
@@ -951,6 +1105,7 @@ p{
        
     }
     
+  
     .navbar .nav-links{
         display: none;
     }
@@ -1028,16 +1183,25 @@ p{
        .about-happiness-wrapper h2,
        .team-members-wrapper h2,
        .in-association-section h2,
-       .gallery-wrapper h2
+       .gallery-wrapper h2,
+       .change-maker-campaign-wrapper h2
        {
-           text-align: left;
+           
            font-size: 45px ;
            
        }
 
+       .hello-happiness-contents .info1 h3,
+       .hello-happiness-contents .info2 h3
+       {
+           font-size: 35px;
+           text-align: left;
+       }
+
+
        .dash-line{
-           left: 6%;
-           top: 60px;
+           left: 50%;
+           top: 55px;
            
        }
 
@@ -1062,15 +1226,16 @@ p{
            margin-top: 20px;
        }
 
-
        .hello-happiness-contents .info1 p,
-       .hello-happiness-contents .info2 p
-
-       
-       {
-           text-align: left;
-       }
-
+    .hello-happiness-contents .info2 p
+    {
+        text-align: left;
+        max-width: 100%;
+    
+      
+    }
+  
+    
        .mental-health-pandemic-info,
        .change-maker-campaign-info,
        .about-happiness-info,
@@ -1082,18 +1247,22 @@ p{
        }
        .mental-health-pandemic-banner,
        .change-maker-campaign-banner,
-       .about-happiness-banner,
-       .team-member-photo
+       .about-happiness-banner
        {
            flex: 0 0 100%;
            max-width: 100%;
            order: 1;
        }
-       
-       .about-happiness-banner img{
+
+     
+       .team-member-photo{
+        max-width: 800px;
+
+          margin: 0 auto;
+         
           
-           margin: 0 85px;
        }
+
     
        .about-happiness-info p
        
@@ -1122,7 +1291,275 @@ p{
      {
          margin-top: 20px;
      }
+     .ambassador-member img{
+        margin-bottom: 20px;
+    }
+    
+
+     .ambassador-member-name{
+         font-size: 10px;
+         padding: 5px 10px;
+     }
+
+     .ranveer-brar{
+        
+            max-height: 25px;
+        
+     }
+     .chef{
+         font-size: 5px;
+     }
+
+     .mental-health-pandemic-data,
+     .change-maker-campaign-data,
+     .about-happiness-data
+     {
+         
+         flex-direction: column;
+         align-items: center;
+     }
+     .mental-health-pandemic-banner img{
+        
+        padding-left: 0;
+        margin: 0 auto;
+       
+        /* object-fit: cover; */
+      
+    }
+
+    .mental-health-pandemic-info p{
+        max-width: 100%;
+    }
+
+    .change-maker-campaign-wrapper .dash-line{
+        top:55px
+    }
+   
+    .footer-line{
+        width:280px ;
+    }
+    .content{
+        width: 280px;
+    }
+   
 }
+@media screen  and (max-width : 550px){
+
+    .Lets-make-world{
+        font-size: 35px;
+    }
+
+    .a-happier-place{
+        font-size: 40px;
+    }
+    .nav-links li {
+       
+        padding-left:15px;
+        
+       
+    }
+    
+  
+    .navbar .nav-links{
+        display: none;
+    }
+
+  
+    .nav-logo{
+        flex: 0 0 100%;
+        max-width: 100%;
+       
+        text-align: center;
+        
+    }
+
+  
+    .bottom-nav .bottom-nav-links{
+        width: 100%;
+        position: fixed;
+        bottom:-20px;
+        background: #FFFFFF;
+        padding: 20px 0;
+        display: flex;
+        z-index: 2;
+        text-align: center;
+        height: 100px;
+        }
+        .bottom-nav img{
+          width: 30px;
+          height: 30px;
+          
+        }
+        .bottom-nav a{
+          text-decoration: none;
+          color: black;
+        
+        }
+  
+       .line {
+        border: 1px solid #383027;
+        width: 0;
+        height: 40px;
+        background-color: #319647;
+      }
+    
+        .bottom-nav li{
+        list-style: none;
+         flex: 0 0 25%;
+         max-width: 25%;
+       }
+  
+       .bottom-nav .bottom-nav-union{
+         cursor: pointer;
+       }
+    
+       .header-data,
+       .header-img{
+           flex: 0 0 100%;
+           max-width: 100%;
+
+       }
+       .covid-health{
+           display: none;
+       }
+
+       .header-data{
+           margin-top: -150px;
+       }
+
+       p{
+           font-size: 14px;
+       }
+
+       .hello-happiness-wrapper h2,
+       .happiness-ambassadors-wrapper h2,
+       .mental-health-pandemic-wrapper h2,
+       .about-happiness-wrapper h2,
+       .team-members-wrapper h2,
+       .in-association-section h2,
+       .gallery-wrapper h2,
+       .change-maker-campaign-wrapper h2
+       {
+          
+           font-size: 40px ;
+           
+       }
+
+       .hello-happiness-contents .info1 h3,
+       .hello-happiness-contents .info2 h3
+       {
+           font-size: 30px;
+        margin: 0 auto;
+
+       }
+
+
+   
+     
+       .info1,
+       .info2{
+           flex: 0 0 100%;
+           max-width: 100%;
+       }
+
+     
+
+       .hello-happiness-contents .info2 h3
+       {
+           margin-top: 20px;
+       }
+
+       .hello-happiness-contents .info1 p,
+    .hello-happiness-contents .info2 p
+    {
+        text-align: left;
+        max-width: 100%;
+    
+      
+    }
+  
+    
+       .mental-health-pandemic-info,
+       .change-maker-campaign-info,
+       .about-happiness-info,
+       .team-member-info
+       {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
+       }
+       .mental-health-pandemic-banner,
+       .change-maker-campaign-banner,
+       .about-happiness-banner,
+       .team-member-photo
+       {
+           flex: 0 0 100%;
+           max-width: 100%;
+           order: 1;
+       }
+       
+       .about-happiness-banner img{
+          
+           margin: 0 85px;
+       }
+    
+       .team-member-photo{
+        max-width: 300px;
+        margin: 0 auto;
+         
+          
+       }
+       
+      
+       .about-happiness-info p
+       
+       
+       {
+           padding: 0;
+       }
+
+       .team-member-info{
+           padding-left: 0;
+       }
+
+     .happiness-ambassadors-section{
+         padding: 40px 15px;
+     }
+
+     .change-maker-campaign-wrapper .dash-line{
+        top:55px
+    }
+    
+     .mental-health-pandemic-info,
+     .change-maker-campaign-info,
+     .about-happiness-info,
+     .team-member-info
+     
+     {
+         margin-top: 20px;
+     }
+     .ambassador-member img{
+        margin-bottom: 20px;
+    }
+    
+
+     .ambassador-member-name{
+         font-size: 10px;
+         padding: 5px 10px;
+     }
+
+     .ranveer-brar{
+        
+            max-height: 25px;
+        
+     }
+     .chef{
+         font-size: 5px;
+     }
+
+   
+}
+
 
 
 /* footer */
@@ -1163,19 +1600,16 @@ p{
     }
     
 }
-
-@media screen and (max-width : 750px){
-
-    
+@media screen and (max-width : 728px){
 
     .footer-line{
         width:280px ;
     }
     .content{
-        width: 280px;
+        width: 310px;
     }
-    
 }
+
 @media screen and (max-width : 650px){
 
     .footer-links{
@@ -1197,4 +1631,325 @@ p{
         width:100%;
     }
     
+}
+
+
+@media screen  and (max-width : 400px){
+
+    .Lets-make-world{
+        font-size: 35px;
+    }
+
+    .a-happier-place{
+        font-size: 40px;
+    }
+    .nav-links li {
+       
+        padding-left:15px;
+        
+       
+    }
+    
+  
+    .navbar .nav-links{
+        display: none;
+    }
+
+  
+    .nav-logo{
+        flex: 0 0 100%;
+        max-width: 100%;
+       
+        text-align: center;
+        
+    }
+
+  
+    .bottom-nav .bottom-nav-links{
+        width: 100%;
+        position: fixed;
+        bottom:-20px;
+        background: #FFFFFF;
+        padding: 20px 0;
+        display: flex;
+        z-index: 2;
+        text-align: center;
+        height: 100px;
+        }
+        .bottom-nav img{
+          width: 30px;
+          height: 30px;
+          
+        }
+        .bottom-nav a{
+          text-decoration: none;
+          color: black;
+        
+        }
+  
+       .line {
+        border: 1px solid #383027;
+        width: 0;
+        height: 40px;
+        background-color: #319647;
+      }
+    
+        .bottom-nav li{
+        list-style: none;
+         flex: 0 0 25%;
+         max-width: 25%;
+       }
+  
+       .bottom-nav .bottom-nav-union{
+         cursor: pointer;
+       }
+    
+       .header-data,
+       .header-img{
+           flex: 0 0 100%;
+           max-width: 100%;
+
+       }
+       .covid-health{
+           display: none;
+       }
+
+       .header-data{
+           margin-top: -150px;
+       }
+
+       p{
+           font-size: 14px;
+       }
+
+       .hello-happiness-wrapper h2,
+       .happiness-ambassadors-wrapper h2,
+       .mental-health-pandemic-wrapper h2,
+       .about-happiness-wrapper h2,
+       .team-members-wrapper h2,
+       .in-association-section h2,
+       .gallery-wrapper h2,
+       .change-maker-campaign-wrapper h2
+       {
+            text-align: left;
+           font-size: 35px ;
+           line-height: 2.2rem;
+           
+       }
+
+       .hello-happiness-contents .info1 h3,
+       .hello-happiness-contents .info2 h3
+       {
+           font-size: 25px;
+           text-align: left;
+       }
+
+
+     
+
+     
+       .about-happiness-banner
+       
+       {
+          
+          margin-right: 30px;
+       }
+
+       .change-maker-campaign-banner{
+          
+          margin-right: 35px;
+
+       }
+       .change-maker-campaign-banner img{
+         
+       
+        padding-left: 0;
+       }
+
+ 
+       .about-happiness-banner img{
+          
+        margin: 0 ;
+    }
+       .dash-line{
+           left: 10%;
+           top: 45px;
+       }
+     
+     
+       .hello-happiness-contents .info1 h3,
+       .hello-happiness-contents .info2 h3
+       {
+        
+        margin: 0;
+
+         
+       }
+
+       .hello-happiness-contents .info2 h3
+       {
+           margin-top: 20px;
+       }
+
+       .hello-happiness-contents .info1 p,
+    .hello-happiness-contents .info2 p
+    {
+        text-align: left;
+        max-width: 100%;
+    
+      
+    }
+  
+    
+       .mental-health-pandemic-info,
+       .change-maker-campaign-info,
+       .about-happiness-info,
+       .team-member-info
+       {
+        flex: 0 0 100%;
+        max-width: 100%;
+        order: 2;
+       }
+       .mental-health-pandemic-banner,
+       .change-maker-campaign-banner,
+       .about-happiness-banner,
+       .team-member-photo
+       {
+           flex: 0 0 100%;
+           max-width: 100%;
+           order: 1;
+       }
+       
+    
+    
+       .team-member-photo{
+        max-width: 300px;
+        margin: 0 auto;
+         
+          
+       }
+       
+      
+       .about-happiness-info p
+       
+       
+       {
+           padding: 0;
+       }
+
+       .team-member-info{
+           padding-left: 0;
+       }
+
+     .happiness-ambassadors-section{
+         padding: 40px 15px;
+     }
+
+     .change-maker-campaign-wrapper .dash-line{
+        top:45px
+    }
+
+    .mental-health-pandemic-wrapper .dash-line{
+        top: 80px;
+    }
+    
+     .mental-health-pandemic-info,
+     .change-maker-campaign-info,
+     .about-happiness-info,
+     .team-member-info
+     
+     {
+         margin-top: 20px;
+     }
+     .ambassador-member img{
+        margin-bottom: 20px;
+    }
+    
+
+     .ambassador-member-name{
+         font-size: 10px;
+         padding: 5px 10px;
+     }
+
+     .ranveer-brar{
+        
+            max-height: 25px;
+        
+     }
+     .chef{
+         font-size: 5px;
+     }
+
+   
+}
+
+@media screen  and (max-width : 608px){
+    .Lets-make-world{
+        margin: -15px 0 29px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 45px;
+
+       
+    }
+
+    .a-happier-place{
+
+        margin: 20px 0 38px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 45px;
+
+    }
+}
+
+@media screen  and (max-width : 510px){
+    .Lets-make-world{
+        margin: 15px 0 29px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 40px;
+
+       
+    }
+
+    .a-happier-place{
+
+        margin: 20px 0 38px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 40px;
+
+    }
+}
+
+
+@media screen  and (max-width : 462px){
+    .Lets-make-world{
+        margin: 15px 0 29px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 35px;
+
+       
+    }
+
+    .a-happier-place{
+
+        margin: 20px 0 38px 0;
+        text-align: center;
+        max-width: 100%;
+        font-size: 35px;
+
+    }
+}
+
+@media screen  and (max-width : 488px){
+
+    .mental-health-pandemic-wrapper h2{
+        line-height: 2.5rem;
+    }
+    .mental-health-pandemic-wrapper .dash-line{
+        top:82px
+    }
 }

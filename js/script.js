@@ -16,15 +16,11 @@ $('.header-tabs').responsiveTabs({
 // active nav links
 
 $(function(){
-  $('.link').each(function(){
-      if ($(this).prop('href') == window.location.href) {
-          $(this).css({
-            "color":"#e769c0",
-            "border-bottom":"2px solid  #e769c0"
-            
-          })
-      }
-  })
+  $('.link').click(function(){
+   
+      $('.nav-links .active').removeClass('active');
+      $(this).addClass('active');
+   });
 })
     
  
@@ -60,6 +56,28 @@ $(function () {
 
       "<img src='images/arrow-2.png'>",
     ],
+    responsive: {
+      360: {
+        items: 1,
+        nav: true,
+        dots:false
+      },
+      400: {
+        items: 2,
+        nav: true,
+        dots:false
+      },
+      650: {
+        items: 2,
+        nav: true,
+        dots:false
+      },
+     
+      1000: {
+        items: 3,
+        nav: true,
+      }
+    }
     
   });
 });
@@ -82,6 +100,7 @@ $(function () {
       "<img src='images/arrow-2.png'>",
     ],
     
+    
   });
 });
 
@@ -100,7 +119,29 @@ $(function () {
 
       "<img src='images/arrow-2.png'>",
     ],
-    
+    responsive: {
+
+      360: {
+        items: 1,
+        nav: true,
+        dots:false
+      },
+        500: {
+        items: 2,
+        nav: true,
+        dots:false
+      },
+      650: {
+        items: 2,
+        nav: true,
+        dots:false
+      },
+     
+      1000: {
+        items: 3,
+        nav: true,
+      }
+    }
   });
 });
 
@@ -120,6 +161,28 @@ $(function () {
 
       "<img src='images/arrow-2.png'>",
     ],
+    responsive:{
+    360: {
+        items: 1,
+        nav: true,
+        dots:false
+      },
+      400: {
+        items: 2,
+        nav: true,
+        dots:false
+      },
+     
+      650: {
+        items: 3,
+        nav: true,
+      },
+     
+      850: {
+        items: 5,
+        nav: true,
+      }
+    }
     
   });
 });
@@ -141,7 +204,9 @@ for (i = 0; i < coll.length; i++) {
 
 //show sidebar
 navBtn.addEventListener("click", function () {
+ 
   sidebar.classList.add("show-sidebar");
+  console.log("hii")
 });
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
