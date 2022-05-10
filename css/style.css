@@ -772,30 +772,47 @@ p{
   /* collapsible */
 
   .collapsible {
-    /* background-color: #777; */
-    /* color: white; */
+   
     cursor: pointer;
-    /* padding: 18px; */
     width: 100%;
     border: none;
-    /* text-align: left; */
     outline: none;
     font-size: 15px;
     display: inline;
     
   }
   
-  .collapsible:hover {
-    background-color: #555;
-  }
-   
-  .content {
-    padding: 0 18px;
-    width: 280px;
-    overflow: hidden;
 
+  .collapsible-div::before {
+    content: '\02C3';
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    margin-right : 10px;
+    color: #a52929;
    
-    /* background-color: #f1f1f1; */
+  }
+  .collapsible-div{
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .collapsible-active:before {
+    content: "\02C5";
+    font-size: 15px;
+    margin-top: -2px;
+    margin-right : 10px;
+    color: #a52929; 
+  }
+  
+
+  .content {
+   
+        width: 280px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-out;
+      
   }
 
   .content p{
