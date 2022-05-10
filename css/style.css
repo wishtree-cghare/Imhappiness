@@ -786,10 +786,9 @@ p{
   .collapsible-div::before {
     content: '\02C3';
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     cursor: pointer;
     margin-right : 10px;
-    margin-top: 3px;
     color: #a52929;
    
   }
@@ -800,11 +799,11 @@ p{
   
   .collapsible-active:before {
     content: "\02C5";
-    font-size: 12px;
-    margin-top: 3px;
+    font-size: 15px;
     margin-right : 10px;
     color: #a52929;
- 
+
+    
   }
   
 
@@ -813,19 +812,42 @@ p{
         width: 280px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.8s ease-out;
-      
+        transition: max-height 0.8s ease-out;   
   }
 
   .content p{
       font-size: 12px;
   }
 
+
   .footer-icon{
       color: #a52929;
   }
 
+  .footer-copyright{
+      display: flex;
+      align-items: center;
+  }
+  .copyright-contents{
+      flex: 0 0 98%;
+      max-width: 98%;
+  }
+  .to-top-arrow{
+      flex: 0 0 2%;
+      max-width: 2%;
+     
+  }
+  .to-top-arrow a{
+    background-image: linear-gradient( #7c82ea, #e769c0);
+    border-radius: 50%;
+    padding:2px 6px 2px 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
 
+
+
+  }
 /* Responsiveness of homepage */
 
 @media screen  and (max-width : 1069px){
