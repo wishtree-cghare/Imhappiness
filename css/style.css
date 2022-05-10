@@ -789,6 +789,7 @@ p{
     font-size: 12px;
     cursor: pointer;
     margin-right : 10px;
+    margin-top: 3px;
     color: #a52929;
    
   }
@@ -800,7 +801,7 @@ p{
   .collapsible-active:before {
     content: "\02C5";
     font-size: 12px;
-    margin-top: -2px;
+    margin-top: 3px;
     margin-right : 10px;
     color: #a52929;
  
