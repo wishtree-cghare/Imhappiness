@@ -202,7 +202,7 @@ for (i = 0; i < coll.length; i++) {
 navBtn.addEventListener("click", function () {
  
   sidebar.classList.add("show-sidebar");
-  console.log("hii")
+  
 });
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
