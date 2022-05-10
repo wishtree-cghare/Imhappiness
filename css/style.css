@@ -786,7 +786,7 @@ p{
   .collapsible-div::before {
     content: '\02C3';
     font-weight: bold;
-    font-size: 15px;
+    font-size: 12px;
     cursor: pointer;
     margin-right : 10px;
     color: #a52929;
@@ -799,10 +799,11 @@ p{
   
   .collapsible-active:before {
     content: "\02C5";
-    font-size: 15px;
+    font-size: 12px;
     margin-top: -2px;
     margin-right : 10px;
-    color: #a52929; 
+    color: #a52929;
+ 
   }
   
 
