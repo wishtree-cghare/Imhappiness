@@ -3,6 +3,7 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 
+
 /*-------------------------------------------------------
                 Header Tabs
 ----------------------------------------------------------*/
@@ -181,6 +182,7 @@ navBtn.addEventListener("click", function () {
  
   sidebar.classList.add("show-sidebar");
   
+  
 });
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
@@ -190,6 +192,7 @@ $("#nav-btn").on("click", function () {
   $("body").css("margin-right", "25%");
   $("#nav-btn").css("display", "none");
 });
+
 
 $("#close-btn").on("click", function () {
   $("body").css("margin-right", "0");
