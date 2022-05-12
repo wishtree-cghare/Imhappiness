@@ -19,6 +19,8 @@ $(function(){
   $('.link').click(function(){
    
       $('.nav-links .active').removeClass('active');
+      $('.sidebar-links .active').removeClass('active');
+
       $(this).addClass('active');
    });
 })
@@ -51,27 +53,25 @@ $(function () {
     autoplayHoverPause: true,
     nav: true,
     dots: true,
-    navText: [
-      "<img src='images/arrow-1.png'>",
+    // navText: [
+    //   "<img src='images/arrow-1.png'>",
 
-      "<img src='images/arrow-2.png'>",
-    ],
+    //   "<img src='images/arrow-2.png'>",
+    // ],
     responsive: {
       360: {
         items: 2,
         nav: true,
-        dots:false
       },
       400: {
         items: 2,
         nav: true,
-        dots:false
       },
     
       550: {
         items: 3,
         nav: true,
-        dots:false
+        
       },
       850: {
         items: 5,
@@ -93,14 +93,7 @@ $(function () {
     loop: true,
     autoplayHoverPause: true,
     nav: true,
-    dots: true,
-    navText: [
-      "<img src='images/arrow-1.png'>",
-
-      "<img src='images/arrow-2.png'>",
-    ],
-    
-    
+    dots: true
   });
 });
 
@@ -114,27 +107,19 @@ $(function () {
     autoplayHoverPause: true,
     nav: true,
     dots: true,
-    navText: [
-      "<img src='images/arrow-1.png'>",
-
-      "<img src='images/arrow-2.png'>",
-    ],
     responsive: {
       360: {
         items: 2,
         nav: true,
-        dots:false
       },
       400: {
         items: 2,
         nav: true,
-        dots:false
       },
     
       550: {
         items: 3,
         nav: true,
-        dots:false
       },
       
     }
@@ -152,21 +137,14 @@ $(function () {
     autoplayHoverPause: true,
     nav: true,
     dots: true,
-    navText: [
-      "<img src='images/arrow-1.png'>",
-
-      "<img src='images/arrow-2.png'>",
-    ],
     responsive:{
     360: {
         items: 1,
         nav: true,
-        dots:false
       },
       400: {
         items: 2,
         nav: true,
-        dots:false
       },
      
       650: {
@@ -208,13 +186,23 @@ closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
 
+$("#nav-btn").on("click", function () {
+  $("body").css("margin-right", "25%");
+  $("#nav-btn").css("display", "none");
+});
+
+$("#close-btn").on("click", function () {
+  $("body").css("margin-right", "0");
+  $("#nav-btn").css("display", "inline-block");
+});
+
 
 
 
 
 // Get all sections that have an ID defined
 const sections = document.querySelectorAll("section[id]");
-// console.log(sections)
+
 
 // Add an event listener listening for scroll
 window.addEventListener("scroll", navHighlighter);
@@ -246,3 +234,45 @@ function navHighlighter() {
     }
   });
 }
+
+
+
+/*  smooth scrolling  */
+
+//Function to mark an item from a section width a css class.
+
+function menuOnScroll(mySection, myMenu, myClass) {
+  $(window).scroll(function(){
+    var elScroll = $(window).scrollTop();
+    $(mySection).each(function(i){
+      if ($(this).offset().top <= elScroll) {
+        $(myMenu).removeClass(myClass);
+        $(myMenu).eq(i).addClass(myClass);
+      }
+    });
+  });
+}
+
+//Call function.
+//First parameter will be the section that we want to go.
+//Second will be the item that will change his css.
+//Third will be the class css to add to the item( Our second parameter) Is IMPORTAT to note that we must to skip the dot of our class.
+menuOnScroll('section','nav ul li a', 'inSection');
+menuOnScroll('section','sidebar ul li a', 'inSection');
+
+
+
+
+//Function to animate the scroll when click on a menu item.
+//IMPORTANT. This function is only use for animate the scroll, you could skip it if you want.
+function scrollToAnyPoint (navItem) {
+  var getAttr;
+  $(navItem).click(function(e){
+    e.preventDefault();
+    getAttr = $(this).attr('href');
+    var toSection = $(getAttr).offset().top;
+    $("html, body").animate({scrollTop:toSection}, 1000)
+  });
+}
+//Call Function
+scrollToAnyPoint('nav ul li a');
