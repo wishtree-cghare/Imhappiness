@@ -1397,13 +1397,7 @@ p{
 }
 @media screen  and (max-width : 550px){
 
-    .Lets-make-world{
-        font-size: 35px;
-    }
-
-    .a-happier-place{
-        font-size: 40px;
-    }
+  
   
     .sidebar-links a{
         text-decoration: none;
@@ -1458,8 +1452,6 @@ p{
 
        }
 
-
-   
      
        .info1,
        .info2{
@@ -1503,10 +1495,7 @@ p{
            order: 1;
        }
        
-       .about-happiness-banner img{
-          
-           margin: 0 85px;
-       }
+      
     
        .team-member-photo{
         max-width: 300px;
