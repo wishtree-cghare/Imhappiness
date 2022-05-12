@@ -181,7 +181,7 @@ for (i = 0; i < coll.length; i++) {
 navBtn.addEventListener("click", function () {
  
   sidebar.classList.add("show-sidebar");
-  
+
   
 });
 closeBtn.addEventListener("click", function () {
@@ -279,3 +279,9 @@ function scrollToAnyPoint (navItem) {
 }
 //Call Function
 scrollToAnyPoint('nav ul li a');
+
+function scrollToTop() {
+
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  
+  }

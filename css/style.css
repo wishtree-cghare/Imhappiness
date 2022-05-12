@@ -773,14 +773,12 @@ p{
         float: right;
     }
 
-    .copyright-contents p{
-       
-    }
+ 
 
-  .copyright-contents a{
+  .copyright-contents i{
     background-image: linear-gradient( #7c82ea, #e769c0);
     border-radius: 50%;
-    padding:1px 10px;
+    padding:5px 10px;
     cursor: pointer;
     text-decoration: none;
     color: #FFFFFF;
