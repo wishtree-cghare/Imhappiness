@@ -52,7 +52,7 @@ $(function () {
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
-    nav: true,
+    // nav: true,
     dots: true,
     // navText: [
     //   "<img src='images/arrow-1.png'>",
@@ -62,21 +62,21 @@ $(function () {
     responsive: {
       360: {
         items: 2,
-        nav: true,
+        
       },
       400: {
         items: 2,
-        nav: true,
+       
       },
     
       550: {
         items: 3,
-        nav: true,
+       
         
       },
       850: {
         items: 5,
-        nav: true,
+        
       }
     }
     
@@ -93,7 +93,6 @@ $(function () {
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
-    nav: true,
     dots: true
   });
 });
@@ -106,21 +105,20 @@ $(function () {
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
-    nav: true,
     dots: true,
     responsive: {
       360: {
-        items: 2,
-        nav: true,
+        items: 2
+       
       },
       400: {
-        items: 2,
-        nav: true,
+        items: 2
+      
       },
     
       550: {
-        items: 3,
-        nav: true,
+        items: 3
+       
       },
       
     }
@@ -136,68 +134,51 @@ $(function () {
     loop: true,
    
     autoplayHoverPause: true,
-    nav: true,
     dots: true,
     responsive:{
     360: {
-        items: 1,
-        nav: true,
+        items: 1
       },
       400: {
-        items: 2,
-        nav: true,
+        items: 2
       },
      
       650: {
-        items: 3,
-        nav: true,
+        items: 3
       },
      
       850: {
-        items: 5,
-        nav: true,
+        items: 5
       }
     }
     
   });
 });
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.display === "block") {
+//       content.style.display = "none";
+//     } else {
+//       content.style.display = "block";
+//     }
+//   });
+// }
 
-//show sidebar
-navBtn.addEventListener("click", function () {
- 
-  sidebar.classList.add("show-sidebar");
+// close the sidebar on click of sidebar menu
 
-  
-});
-closeBtn.addEventListener("click", function () {
-  sidebar.classList.remove("show-sidebar");
-});
-
-$("#nav-btn").on("click", function () {
-  $("body").css("margin-right", "25%");
-  $("#nav-btn").css("display", "none");
+$(".sidebar-links")[0].addEventListener("click", function () {
+ document.getElementById("menuToggler").checked = false;
 });
 
 
-$("#close-btn").on("click", function () {
-  $("body").css("margin-right", "0");
-  $("#nav-btn").css("display", "inline-block");
-});
+
+
 
 
 
@@ -218,8 +199,11 @@ function navHighlighter() {
   // Now we loop through sections to get height, top and ID values for each
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
-    const sectionTop = current.offsetTop - 50;
+    const sectionTop = current.offsetTop - 100;
 
+    console.log('section height')
+    console.log(sectionHeight)
+    console.log(sectionTop)
     sectionId = current.getAttribute("id");
     
     
@@ -247,8 +231,10 @@ function navHighlighter() {
 function menuOnScroll(mySection, myMenu, myClass) {
   $(window).scroll(function(){
     var elScroll = $(window).scrollTop();
+    console.log('elsScroll')
+    console.log(elScroll)
     $(mySection).each(function(i){
-      if ($(this).offset().top <= elScroll) {
+      if ($(this).offset().top <= elScroll ) {
         $(myMenu).removeClass(myClass);
         $(myMenu).eq(i).addClass(myClass);
       }
@@ -273,12 +259,15 @@ function scrollToAnyPoint (navItem) {
   $(navItem).click(function(e){
     e.preventDefault();
     getAttr = $(this).attr('href');
-    var toSection = $(getAttr).offset().top;
+    var toSection = $(getAttr).offset().top - 80;
     $("html, body").animate({scrollTop:toSection}, 1000)
   });
 }
 //Call Function
 scrollToAnyPoint('nav ul li a');
+scrollToAnyPoint('ul li a');
+
+
 
 function scrollToTop() {
 
