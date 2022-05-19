@@ -64,7 +64,7 @@ p {
 
 .nav {
     width: 100%;
-    background-color: red;
+    background-color: #FFFFFF;
     position: -webkit-sticky;
     position: fixed;
     top: 0px;
@@ -113,7 +113,7 @@ p {
     text-decoration: none;
     color: #e769c0;
     transition: all 0.8s;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     font-size: 15px ;
 }
 
@@ -125,7 +125,7 @@ p {
 
 .nav-iamhappiness a {
     padding: 0 0;
-    padding-bottom: 25px ;
+    padding-bottom: 20px ;
 
 }
 
@@ -267,7 +267,7 @@ p {
 
 .hello-happiness-contents .info1 h3 {
     max-width: 194px;
-    margin: 0 auto 23px auto;
+    margin: -11px auto 10px auto;
     height: auto;
     background-image: linear-gradient(to right, #7c82ea, #e769c0);
     font-family: Caveat;
@@ -276,13 +276,12 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: -10px 0px 0px 165px;
 
 }
 
 .Aim-of-Hello-Happiness {
     max-width: 282px;
-    margin: 0 auto 23px auto;
+    margin: -10px auto 13px auto;
     height: auto;
     background-image: linear-gradient(to right, #7c82ea, #e769c0);
     font-family: Caveat;
@@ -292,7 +291,7 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin: -11px 0px 0px 110px;
+    
 }
 
 .hello-happiness-contents {
@@ -416,6 +415,7 @@ p {
 .mental-health-pandemic-section {
 
     padding: 59px 0;
+    
 }
 
 .mental-health-pandemic-wrapper h2 {
@@ -437,7 +437,7 @@ p {
 
 .mental-health-pandemic-banner {
 
-    flex: 0 0 45%;
+    flex: 0 0 calc(45% - 32px);
     max-width: 45%;
     padding-left: 32px;
 
@@ -448,6 +448,9 @@ p {
     
     max-width: 386px;
     max-height: 312px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     /* padding-left:  197px; */
 }
 
@@ -507,7 +510,8 @@ p {
 
 .about-happiness-wrapper h2 {
     text-align: center;
-    margin: -32px 14px 0 5px}
+    margin: -32px 14px 0 5px
+}
 
 .about-happiness-data {
     display: flex;
@@ -517,14 +521,14 @@ p {
 }
 
 .about-happiness-info {
-    flex: 0 0 55%;
+    flex: 0 0 calc(55% - 54px);
     max-width: 55%;
     padding-top: 13px;
     padding-right: 54px;
 }
 
 .about-happiness-banner {
-    flex: 0 0 45%;
+    flex: 0 0 calc(45% - 60px);
     max-width: 45%;
     padding-left: 60px;
     
@@ -533,6 +537,9 @@ p {
 .about-happiness-banner img {
     max-width: 338px;
   max-height: 269px;
+  width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 
@@ -1184,7 +1191,12 @@ p {
 
     }
 
-
+    .header-img {
+        flex: 0 0 45%;
+        max-width: 45%;
+        padding-left: 0;
+        padding-top: 0
+    }
     /* ------------------
         sidebar
   ----------------------*/
@@ -1472,10 +1484,15 @@ p {
     .hello-happiness-contents .info2 p {
         text-align: left;
         max-width: 100%;
-
+        margin : 0
 
     }
 
+    .hello-happiness-contents .info2 p {
+   
+       
+        margin : 0
+    }
 
     .mental-health-pandemic-info,
     .change-maker-campaign-info,
@@ -1512,14 +1529,17 @@ p {
     }
 
 
-    .about-happiness-info p {
-        padding: 0;
+
+    .about-happiness-info{
+        padding-right: 0;
     }
 
     .team-member-info {
         padding-left: 0;
     }
-
+    .team-member-data{
+        flex-wrap: wrap;
+    }
 
 
     .mental-health-pandemic-info,
@@ -1527,6 +1547,11 @@ p {
     .about-happiness-info,
     .team-member-info {
         margin-top: 20px;
+    }
+
+    .change-maker-campaign-banner,
+    .change-maker-campaign-info{
+        padding-left: 0;
     }
 
     .ambassador-member img {
@@ -1570,6 +1595,9 @@ p {
         max-width: 100%;
     }
 
+    .about-happiness-banner{
+        padding-left: 0;
+    }
 
     .hello-haapiness-section,
     .happiness-ambassadors-section,
@@ -1579,7 +1607,7 @@ p {
     .team-members-section,
     .in-association-section,
     .gallery-section {
-        padding: 20px 0;
+        padding: 40px 0;
     }
 }
 
@@ -1847,7 +1875,12 @@ p {
         text-align: left;
     }
 
+    .hello-happiness-wrapper h2 ,
+    .happiness-ambassadors-wrapper h2,
+    .team-members-wrapper h2{
 
+        margin: 0 0 0 0
+    }
 
 
 
@@ -1965,6 +1998,9 @@ p {
         font-size: 5px;
     }
 
+    .gallery-section{
+        padding: 40px 15px;
+    }
 
 }
 
