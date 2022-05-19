@@ -63,9 +63,10 @@ p {
 }
 
 .nav {
-    background-color: #ffffff;
+    width: 100%;
+    background-color: red;
     position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0px;
     overflow: hidden;
     z-index: 9999;
@@ -97,7 +98,8 @@ p {
 
 .nav-links li {
     list-style-type: none;
-    padding-left: 42px;
+    padding-left: 33px;
+    padding-top: 11px;
 
 
 }
@@ -111,6 +113,8 @@ p {
     text-decoration: none;
     color: #e769c0;
     transition: all 0.8s;
+    padding-bottom: 25px;
+    font-size: 15px ;
 }
 
 .nav-links a:hover {
@@ -121,6 +125,7 @@ p {
 
 .nav-iamhappiness a {
     padding: 0 0;
+    padding-bottom: 25px ;
 
 }
 
@@ -128,10 +133,10 @@ p {
 .sidebar-links .active {
     color: #7c82ea;
     font-weight: bold;
-    border-bottom: 2px solid transparent;
+    border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, #7c82ea, #e769c0);
     border-image-slice: 1;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -148,6 +153,10 @@ p {
     position: absolute;
     right: 0;
     bottom: -30px;
+    
+}
+.covid-health img{
+    margin-bottom: -10px;
 }
 
 .Lets-make-world {
@@ -164,6 +173,7 @@ p {
     text-transform: uppercase;
     padding-top: 75px;
     text-shadow: 2px 2px orange;
+    margin-top: 38px;
 }
 
 .Lets-make-world-shadow {
@@ -198,11 +208,14 @@ p {
 .header-img {
     flex: 0 0 45%;
     max-width: 45%;
+    padding-left: 62px;
+    padding-top: 82px
 }
 
 .header-img img {
     max-width: 455px;
-
+    max-height: 444px;
+    
 }
 
 
@@ -222,8 +235,7 @@ p {
     width: 60px;
     height: 5px;
     background-image: linear-gradient(to right, #7c82ea, #e769c0);
-    margin: 0 auto;
-    margin-top: 24px;
+    margin: 20px auto;
 
 
 
@@ -238,7 +250,7 @@ p {
 
 .hello-happiness-wrapper h2 {
 
-    margin-top: 0;
+    margin: -14px 14px 0px 11px
 }
 
 .hello-happiness-wrapper h2,
@@ -264,6 +276,7 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: -10px 0px 0px 165px;
 
 }
 
@@ -279,6 +292,7 @@ p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: -11px 0px 0px 110px;
 }
 
 .hello-happiness-contents {
@@ -297,23 +311,24 @@ p {
 .hello-happiness-contents .info1 p {
    
     text-align: center;
+    margin : 13px 0px 0px 11px
 
 }
 
 .hello-happiness-contents .info2 p {
    
     text-align: center;
-
+    margin : 14px 0px 0px -13px
 }
 
 .hello-happiness-contents-bottom p {
     max-width: 1140px;
-    margin-top: 36px;
+    margin-top: 22px;
 }
 
 
 .ambassadors-members-wrapper {
-    padding: 30px 0;
+    /* padding: 30px 0; */
 
 
 }
@@ -357,7 +372,8 @@ p {
 .happiness-ambassadors-wrapper h2 {
     margin-bottom: 24px;
     text-align: center;
-    margin-top: 0;
+    margin: -35px 45px 0px 31px
+
 
 }
 
@@ -388,6 +404,10 @@ p {
 
 }
 
+.happiness-ambassadors-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 48px;
+}
+
 .owl-theme .owl-nav [class*=owl-] img {
     width: 10px;
 }
@@ -400,7 +420,7 @@ p {
 
 .mental-health-pandemic-wrapper h2 {
     text-align: center;
-    margin-top: 0;
+    margin: -24px -1px 0 -8px;
 }
 
 .mental-health-pandemic-data {
@@ -419,24 +439,27 @@ p {
 
     flex: 0 0 45%;
     max-width: 45%;
+    padding-left: 32px;
 
 }
 
 
 .mental-health-pandemic-banner img {
-    width: 100%;
-    height: 100%;
-    padding-left: 97px;
+    
+    max-width: 386px;
+    max-height: 312px;
+    /* padding-left:  197px; */
 }
 
 
 .mental-health-pandemic-info p {
 
     max-width: 565px;
+    margin-top: -7px;
 }
 
 .mental-health-pandemic-bottom-info {
-    margin-top: 36px;
+    margin-top: 10px;
 }
 
 
@@ -450,7 +473,8 @@ p {
 
 .change-maker-campaign-wrapper h2 {
     text-align: center;
-    margin-top: 0;
+    margin: -31px 12px 0px 0px;
+  
 }
 
 .change-maker-campaign-data {
@@ -461,20 +485,20 @@ p {
 .change-maker-campaign-info {
     flex: 0 0 55%;
     max-width: 55%;
+    padding-left: 55px;
 }
 
 .change-maker-campaign-banner {
     flex: 0 0 45%;
     max-width: 45%;
+    padding-left: 152px;
+    padding-top: 6px;
 }
 
 .change-maker-campaign-data {
-    margin-top: 38px;
+    margin-top: 30px;
 }
 
-.change-maker-campaign-banner img {
-    padding: 0 65px;
-}
 
 .about-happiness-section {
     padding: 59px 0;
@@ -483,31 +507,34 @@ p {
 
 .about-happiness-wrapper h2 {
     text-align: center;
-    margin-top: 0;
-}
+    margin: -32px 14px 0 5px}
 
 .about-happiness-data {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 40px;
+  
 }
 
 .about-happiness-info {
     flex: 0 0 55%;
     max-width: 55%;
+    padding-top: 13px;
+    padding-right: 54px;
 }
 
 .about-happiness-banner {
     flex: 0 0 45%;
     max-width: 45%;
+    padding-left: 60px;
+    
 }
 
 .about-happiness-banner img {
-    width: 100%;
-    height: 100%;
-    padding-left: 117px;
+    max-width: 338px;
+  max-height: 269px;
 }
+
 
 .team-members-section {
     background: #f9f9ff;
@@ -516,54 +543,77 @@ p {
 
 .team-members-wrapper h2 {
     text-align: center;
-    margin-top: 0;
+    margin: -33px 26px 0px 13px;
+    
 }
 
 .team-member-data {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 39px;
+  
+   
 }
 
 .team-member-photo {
 
     flex: 0 0 30%;
     max-width: 30%;
+    padding-left: 37px;
+    padding-top: 22px;
 }
 
 .team-member-info {
     flex: 0 0 70%;
     max-width: 70%;
-    padding-left: 51px;
-
+    padding-left: 38px;
+    padding-top: 7px;
 }
 
 .team-member-photo img {
     border-radius: 500px;
+    max-width: 300px;
+  max-height: 300px;
 }
 
 
 .team-member-info h3 {
-    margin-top: 0;
-    margin-bottom: 31px;
-    max-width: 197px;
+    
+    margin-bottom:49px;
+    margin-top: -3px;
     background-image: linear-gradient(to right, #7c82ea, #e769c0);
     font-family: Caveat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    font-family: Caveat;
+    font-size: 48px;
+    font-weight: bold;
+    
 }
 
 .team-member-info h5 {
     margin-bottom: 18px;
     color: #e769c0;
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: bold;
+    margin: -21px 0 0px 3px;
 }
 
+.team-member-info p{
+    margin: 8px 0 -8px 7px;
+}
 .happiness-hack {
     color: #7c82ea;
 }
 
+.happiness-hack-para {
+    padding-right: 17px;
+}
+    
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin: 32px 1px 0 -1px;
+}
 
 .in-association-section {
     padding: 59px 0;
@@ -571,7 +621,7 @@ p {
 
 .association-wrapper h2 {
     text-align: center;
-    margin-top: 0;
+    margin: -21px 13px 0 0;
 }
 
 .association-container {
@@ -595,9 +645,14 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.association-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
+        margin : 45px 27px 10px 10px
+}
+
+
 .gallery-wrapper h2 {
     text-align: center;
-    margin-top: 0;
+    margin: -34px 15px 0 0;
 }
 
 .gallery-section {
@@ -605,7 +660,9 @@ p {
     padding: 59px 0;
 }
 
-
+.gallery-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
+    margin : 17px 0 0 0
+}
 .gallery-container {
 
     padding-top: 30px;
@@ -626,6 +683,7 @@ p {
 
 .snapshot-div {
     text-align: center;
+    margin-top: 23px
 }
 
 .snapshot {
@@ -656,14 +714,15 @@ p {
 }
 
 .footer-logo {
-    flex: 0 0 calc(30% - 20px);
-    max-width: 30%;
+    flex: 0 0 calc(33.333% - 5px);
+    max-width: 33.333%;
+    margin: -9px 0 0 -1px;
 }
 
 .footer-links,
 .footer-contact-us {
-    flex: 0 0 calc(35% - 20px);
-    max-width: 35%;
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: 33.333%;
 }
 .footer-contact-us a{
     text-decoration: none;
@@ -672,43 +731,48 @@ p {
 .footer-links ul li a {
     text-decoration: none;
     color: #FFFFFF;
+    padding: 20px 0px 1px 3px;
+    font-size: 14px;
 }
 
 .footer-links ul li {
     border-bottom: 1px solid #0f0b27;
-    width: 300px;
-    padding-top: 15px;
+    
+    /* padding-top: 15px; */
 }
 
 .footer-links .useful-link {
     border-bottom: none;
-    padding-top: 0;
+   
 }
 
-.footer-links .home-link {
-    padding: 0;
-}
+
 
 .logo-contents {
     padding-right: 10px;
 }
 
-.footer h5 {
-    margin-bottom: 10px;
+.logo-contents p{
+    line-height: 24px;
+    font-size: 14px;
+    word-spacing: 6px;
+    font-weight: 500;
+    padding: 0 10px 0 0;
 }
+
 
 .footer-links li,
 .footer-contact-us li {
     list-style-type: none;
+    
 }
 
 
 .footer-line {
     width: 100%;
-    height: 1px;
+    height: 2.5px;
     background-color: #e769c0;
-    margin-bottom: 15px;
-}
+    margin: 13px 0 0px 0;}
 
 .font-awesome-icon {
     color: #a52929;
@@ -716,25 +780,38 @@ p {
 
 .footer-social-icons {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
-.footer-social-icons .icon1,
-.footer-social-icons .icon2,
+.footer-social-icons .icon1{
+    margin: 32px 0px 0px 9px
+}
+.footer-social-icons .icon2{
+    margin: 32px 0 0 19px;
+    
+}
 .footer-social-icons .icon3 {
-    padding-right: 25px;
-    padding-top: 40px;
+    margin: 34px 0 0 20px;
+    
 }
 
 .footer-links h5,
 .footer-contact-us h5 {
     font-weight: 900;
+    font-size: 15px;
+}
+.footer-links h5
+{
+    font-size: 15px;
+    margin: -10px 0 0 -2px;
+    word-spacing: -4.9px;
+}
+.footer-contact-us h5{
+    margin: -11px 0 0 9px;
+    word-spacing: -5.9px;
+
 }
 
-.copyright-section {
-    background: #000;
-    padding-bottom: 10px;
-}
 
 .copyright-section .container {
     max-width: 100%;
@@ -743,11 +820,20 @@ p {
 .footer-copyright {
     color: #FFFFFF;
     text-align: center;
-    height: 40px;
-    padding: 10px;
+   
 }
 
+.copyright-contents p{
+    padding: 26px 37px 0 69px;
+    font-size: 14px;
+    font-weight: bold;
+    word-spacing: -1px
+}
 
+.copyright-section {
+    background: #0f0b27;
+    padding-bottom: 10px;
+}
 
 /* collapsible */
 
@@ -765,11 +851,11 @@ p {
 .collapsible-div::before {
     content: '\02C3';
     font-weight: bold;
-    font-size: 25px;
-    margin-right: 10px;
-    margin-top: 2px;
+    font-size: 15px;
+   
     color: #a52929;
     cursor: default;
+    margin: 20px 3px 0px -3px
 
 
 }
@@ -787,6 +873,12 @@ p {
     color: #a52929;
 }
 
+.footer-email{
+    margin: 22px 0px 0px 10px
+}
+.footer-email-href{
+   letter-spacing: -1px;
+}
 
 .to-top-arrow {
     float: right;
