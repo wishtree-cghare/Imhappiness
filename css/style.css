@@ -809,13 +809,14 @@ p {
 }
 .footer-links h5
 {
-    font-size: 15px;
-    margin: -10px 0 0 -2px;
-    word-spacing: -4.9px;
+    font-size: 14px;
+    margin: -9px 0 0 -2px;
+    word-spacing: 1.1px;
 }
 .footer-contact-us h5{
-    margin: -11px 0 0 9px;
-    word-spacing: -5.9px;
+    font-size: 14px;
+    margin: -8px 0 0 9px;
+    word-spacing: 1.1px;
 
 }
 
@@ -859,8 +860,7 @@ p {
     content: '\02C3';
     font-weight: bold;
     font-size: 15px;
-   
-    color: #a52929;
+    color: #CF8A44;
     cursor: default;
     margin: 20px 3px 0px -3px
 
@@ -1877,7 +1877,11 @@ p {
 
     .hello-happiness-wrapper h2 ,
     .happiness-ambassadors-wrapper h2,
-    .team-members-wrapper h2{
+    .team-members-wrapper h2,
+    .about-happiness-wrapper h2,
+    .mental-health-pandemic-wrapper h2,
+    .change-maker-campaign-wrapper h2,
+    .gallery-wrapper h2{
 
         margin: 0 0 0 0
     }
