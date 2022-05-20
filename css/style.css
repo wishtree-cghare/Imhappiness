@@ -719,6 +719,8 @@ p {
 .footer-contact-us a{
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 14px;
+    letter-spacing: 0.2px;
 }
 
 
@@ -815,7 +817,7 @@ p {
 }
 
 .copyright-contents p{
-    padding: 26px 37px 0 69px;
+    padding: 24px 52px 0 69px;
     font-size: 14px;
     font-weight: bold;
     word-spacing: -1px
@@ -879,11 +881,13 @@ p {
 .copyright-contents i {
     background-image: linear-gradient(#7c82ea, #e769c0);
     border-radius: 50%;
-    padding: 5px 10px;
+    padding: 14px 15px;
     cursor: pointer;
     text-decoration: none;
     color: #FFFFFF;
     float: right;
+    margin-right: -37px;
+    margin-top: -8px;
 }
 
 .logo-contents {
