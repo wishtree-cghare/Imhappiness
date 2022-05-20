@@ -21,12 +21,10 @@ $(function(){
    
       $('.nav-links .active').removeClass('active');
       $('.sidebar-links .active').removeClass('active');
-
       $(this).addClass('active');
    });
 })
     
- 
 // collapsible on plus minus
 var coll = document.getElementsByClassName("collapsible-div");
 var i;
@@ -52,13 +50,7 @@ $(function () {
     smartSpeed: 700,
     loop: true,
     autoplayHoverPause: true,
-    // nav: true,
     dots: true,
-    // navText: [
-    //   "<img src='images/arrow-1.png'>",
-
-    //   "<img src='images/arrow-2.png'>",
-    // ],
     responsive: {
       360: {
         items: 2,
@@ -155,33 +147,12 @@ $(function () {
   });
 });
 
-// var coll = document.getElementsByClassName("collapsible");
-// var i;
-
-// for (i = 0; i < coll.length; i++) {
-//   coll[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var content = this.nextElementSibling;
-//     if (content.style.display === "block") {
-//       content.style.display = "none";
-//     } else {
-//       content.style.display = "block";
-//     }
-//   });
-// }
 
 // close the sidebar on click of sidebar menu
 
 $(".sidebar-links")[0].addEventListener("click", function () {
  document.getElementById("menuToggler").checked = false;
 });
-
-
-
-
-
-
-
 
 
 // Get all sections that have an ID defined
@@ -200,10 +171,6 @@ function navHighlighter() {
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 100;
-
-    console.log('section height')
-    console.log(sectionHeight)
-    console.log(sectionTop)
     sectionId = current.getAttribute("id");
     
     
@@ -249,9 +216,6 @@ function menuOnScroll(mySection, myMenu, myClass) {
 menuOnScroll('section','nav ul li a', 'inSection');
 menuOnScroll('section','sidebar ul li a', 'inSection');
 
-
-
-
 //Function to animate the scroll when click on a menu item.
 //IMPORTANT. This function is only use for animate the scroll, you could skip it if you want.
 function scrollToAnyPoint (navItem) {
@@ -263,11 +227,11 @@ function scrollToAnyPoint (navItem) {
     $("html, body").animate({scrollTop:toSection}, 1000)
   });
 }
+
+
 //Call Function
 scrollToAnyPoint('nav ul li a');
 scrollToAnyPoint('ul li a');
-
-
 
 function scrollToTop() {
 

@@ -43,7 +43,6 @@ p {
     padding: 0 15px;
 }
 
-
 .sidebar {
     display: none;
 }
@@ -65,7 +64,6 @@ p {
 .nav {
     width: 100%;
     background-color: #FFFFFF;
-    position: -webkit-sticky;
     position: fixed;
     top: 0px;
     overflow: hidden;
@@ -73,22 +71,15 @@ p {
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-
-
-
 .nav-logo {
     flex: 0 0 25%;
     max-width: 25%;
-
 }
 
 .nav-list {
     flex: 0 0 75%;
     max-width: 75%;
-
 }
-
-
 
 .nav-links {
     display: flex;
@@ -136,7 +127,6 @@ p {
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to right, #7c82ea, #e769c0);
     border-image-slice: 1;
-    /* width: 100%; */
 }
 
 
@@ -199,7 +189,6 @@ p {
     
 }
 
-
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -224,11 +213,7 @@ p {
     flex: 0 0 55%;
     max-width: 55%;
     padding-left: 109px;
-}
-
-
-
-
+   }
 
 .dash-line {
 
@@ -524,7 +509,7 @@ p {
     flex: 0 0 calc(55% - 54px);
     max-width: 55%;
     padding-top: 13px;
-    padding-right: 54px;
+    padding-right: 23px;
 }
 
 .about-happiness-banner {
@@ -540,6 +525,7 @@ p {
   width: 100%;
     height: 100%;
     object-fit: contain;
+    margin: -7px 0 0 52px;
 }
 
 
@@ -670,17 +656,16 @@ p {
 .gallery-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
     margin : 17px 0 0 0
 }
+
+
 .gallery-container {
-
     padding-top: 30px;
-
-
 }
 
 
 .gallery-member {
     margin: 10px 10px;
-
+    
 }
 
 .gallery-member img {
@@ -729,30 +714,27 @@ p {
 .footer-links,
 .footer-contact-us {
     flex: 0 0 calc(33.333% - 20px);
-    max-width: 33.333%;
+    max-width:100%;
 }
 .footer-contact-us a{
     text-decoration: none;
     color: #FFFFFF;
 }
+
+
+.footer-links ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #0f0b27;
+    
+}
+
 .footer-links ul li a {
     text-decoration: none;
     color: #FFFFFF;
-    padding: 20px 0px 1px 3px;
+    padding: 20px 0 0 5px;
     font-size: 14px;
 }
-
-.footer-links ul li {
-    border-bottom: 1px solid #0f0b27;
-    
-    /* padding-top: 15px; */
-}
-
-.footer-links .useful-link {
-    border-bottom: none;
-   
-}
-
 
 
 .logo-contents {
@@ -779,7 +761,8 @@ p {
     width: 100%;
     height: 2.5px;
     background-color: #e769c0;
-    margin: 13px 0 0px 0;}
+    margin: 13px 0 0px 0;
+}
 
 .font-awesome-icon {
     color: #a52929;
@@ -1770,7 +1753,7 @@ p {
     .footer-links,
     .footer-contact-us {
         flex: 0 0 calc(50% - 30px);
-        max-width: 50%;
+        max-width: 100%;
     }
 
 
@@ -1885,8 +1868,6 @@ p {
 
         margin: 0 0 0 0
     }
-
-
 
     .about-happiness-banner {
 
