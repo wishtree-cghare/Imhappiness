@@ -22,7 +22,7 @@ h2 {
     font-size: 60px;
     font-family: Caveat;
     font-weight: bold;
-    line-height: normal;
+    /* line-height: normal; */
 }
 
 h3 {
@@ -36,6 +36,10 @@ p {
     font-size: 16px;
     line-height: 1.88
 }
+
+/* a{
+    display: inline-block;
+} */
 
 .container {
     max-width: 1170px;
@@ -55,10 +59,8 @@ p {
 .navbar {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 15px;
-    align-items: center;
-    margin-bottom: 15px;
-
+    margin-bottom: 0;
+   
 }
 
 .nav {
@@ -69,16 +71,19 @@ p {
     overflow: hidden;
     z-index: 9999;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    
 }
 
 .nav-logo {
     flex: 0 0 25%;
     max-width: 25%;
+    padding: 15px 0;
 }
 
 .nav-list {
     flex: 0 0 75%;
     max-width: 75%;
+    padding: 34px 0 0 30px;
 }
 
 .nav-links {
@@ -89,10 +94,6 @@ p {
 
 .nav-links li {
     list-style-type: none;
-    padding-left: 33px;
-    padding-top: 11px;
-
-
 }
 
 .bottom-nav {
@@ -104,8 +105,8 @@ p {
     text-decoration: none;
     color: #e769c0;
     transition: all 0.8s;
-    padding-bottom: 20px;
     font-size: 15px ;
+    padding: 0 15px 23px 15px;
 }
 
 .nav-links a:hover {
@@ -114,10 +115,9 @@ p {
 
 }
 
-.nav-iamhappiness a {
-    padding: 0 0;
-    padding-bottom: 20px ;
-
+.nav-links li:last-child{
+        padding-right: 0;
+   
 }
 
 .nav-links .active,
@@ -220,10 +220,7 @@ p {
     width: 60px;
     height: 5px;
     background-image: linear-gradient(to right, #7c82ea, #e769c0);
-    margin: 20px auto;
-
-
-
+    margin: 34px auto;
 }
 
 .hello-haapiness-section {
@@ -347,22 +344,24 @@ p {
 
 .happiness-ambassadors-section {
     background: #f9f9ff;
-    padding: 59px 0;
+    padding: 55px 0;
 
 }
 
 
-
+.happiness-ambassadors-wrapper{
+    padding: 0;
+}
 .happiness-ambassadors-wrapper h2 {
-    margin-bottom: 24px;
     text-align: center;
-    margin: -35px 45px 0px 31px
+    /* margin: -35px 45px 0px 31px */
+    line-height: 2.9rem;
 
 
 }
 
 .ambassadors-members-container {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .ambassador-member {
@@ -389,7 +388,8 @@ p {
 }
 
 .happiness-ambassadors-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 48px;
+    margin: 15px 0;
+   
 }
 
 .owl-theme .owl-nav [class*=owl-] img {
@@ -399,13 +399,13 @@ p {
 
 .mental-health-pandemic-section {
 
-    padding: 59px 0;
+    padding: 55px 0 55px 0;
     
 }
 
 .mental-health-pandemic-wrapper h2 {
     text-align: center;
-    margin: -24px -1px 0 -8px;
+    line-height: 2.9rem;
 }
 
 .mental-health-pandemic-data {
@@ -455,13 +455,14 @@ p {
 
 .change-maker-campaign-section {
     background: #fff8fd;
-    padding: 59px 0;
+    padding: 55px 0;
 
 }
 
 .change-maker-campaign-wrapper h2 {
     text-align: center;
-    margin: -31px 12px 0px 0px;
+    /* margin: -31px 12px 0px 0px; */
+    line-height: 2.9rem;
   
 }
 
@@ -489,13 +490,14 @@ p {
 
 
 .about-happiness-section {
-    padding: 59px 0;
+    padding: 55px 0;
 
 }
 
 .about-happiness-wrapper h2 {
     text-align: center;
-    margin: -32px 14px 0 5px
+    /* margin: -32px 14px 0 5px */
+    line-height: 2.9rem;
 }
 
 .about-happiness-data {
@@ -531,12 +533,13 @@ p {
 
 .team-members-section {
     background: #f9f9ff;
-    padding: 59px 0;
+    padding: 55px 0;
 }
 
 .team-members-wrapper h2 {
     text-align: center;
-    margin: -33px 26px 0px 13px;
+    /* margin: -33px 26px 0px 13px; */
+    line-height: 2.9rem;
     
 }
 
@@ -551,14 +554,13 @@ p {
     flex: 0 0 30%;
     max-width: 30%;
     padding-left: 37px;
-    padding-top: 22px;
 }
 
 .team-member-info {
     flex: 0 0 70%;
     max-width: 70%;
     padding-left: 38px;
-    padding-top: 7px;
+    /* padding-top: 7px; */
 }
 
 .team-member-photo img {
@@ -605,20 +607,27 @@ p {
     
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-    margin: 32px 1px 0 -1px;
+    /* margin: 32px 1px 0 -1px; */
+    /* margin-top: 40px; */
+    margin: 0;
+    padding: 0;
+    margin-top:30px ;
+    /* padding-top: 20px; */
 }
 
 .in-association-section {
-    padding: 59px 0;
+    padding: 55px 0;
+    background-color: pink;
 }
 
 .association-wrapper h2 {
     text-align: center;
-    margin: -21px 13px 0 0;
+    /* margin: -21px 13px 0 0; */
+    line-height: 2.5rem;
 }
 
 .association-container {
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 
 .association-member {
@@ -638,33 +647,31 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.association-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
-        margin : 45px 27px 10px 10px
-}
 
 
 .gallery-wrapper h2 {
     text-align: center;
-    margin: -34px 15px 0 0;
+    /* margin: -34px 15px 0 0; */
+    line-height: 2.9rem;
 }
 
 .gallery-section {
     background: #fff8fd;
-    padding: 59px 0;
+    padding: 55px 0;
 }
 
 .gallery-wrapper .owl-theme .owl-nav.disabled+.owl-dots {
-    margin : 17px 0 0 0
+
+    /* margin : 17px 0 0 0 */
 }
 
-
 .gallery-container {
-    padding-top: 30px;
+    /* padding-top: 40px; */
 }
 
 
 .gallery-member {
-    margin: 10px 10px;
+    margin: 0 10px;
     
 }
 
@@ -675,7 +682,8 @@ p {
 
 .snapshot-div {
     text-align: center;
-    margin-top: 23px
+    padding-top: 20px;
+    
 }
 
 .snapshot {
@@ -683,20 +691,19 @@ p {
     max-width: 373px
 }
 
-
 .gallery-wrapper .owl-carousel .owl-item img:hover {
 
     transform: scale(1.1);
     border: 5px solid #a52929;
     transition: 0.5s ease-in-out;
-
+   
 }
 
 
 .footer-section {
     background-color: #000;
     color: #FFFFFF;
-    padding: 60px 0 60px 0;
+    padding: 60px 0 ;
 }
 
 .footer {
@@ -848,18 +855,12 @@ p {
     color: #CF8A44;
     cursor: default;
     margin: 20px 3px 0px -3px
-
-
 }
 
 .collapsible-div {
     display: flex;
     cursor: pointer;
 }
-
-
-
-
 
 .footer-icon {
     color: #a52929;
@@ -875,8 +876,6 @@ p {
 .to-top-arrow {
     float: right;
 }
-
-
 
 .copyright-contents i {
     background-image: linear-gradient(#7c82ea, #e769c0);
@@ -900,7 +899,7 @@ p {
 
 
     .Lets-make-world {
-        margin-top: -20px;
+        /* margin-top: -20px; */
         font-size: 62px;
     }
 
@@ -944,7 +943,6 @@ p {
 @media screen and (max-width : 890px) {
 
     .Lets-make-world {
-        margin-top: -20px;
         font-size: 52px;
     }
 
@@ -963,10 +961,9 @@ p {
     .header-data {
         padding-left: 80px;
     }
-
     .Lets-make-world {
-        margin-top: -45px;
-        
+       
+        font-size: 50px;
     }
 
 
@@ -986,7 +983,7 @@ p {
     }
 
     .Lets-make-world {
-        margin-top: -30px;
+       
         font-size: 50px;
     }
 
@@ -1156,7 +1153,7 @@ p {
     .dash-line {
 
 
-        margin-top: 5px;
+        margin: 30px auto;
 
 
 
@@ -1182,7 +1179,6 @@ p {
         flex: 0 0 45%;
         max-width: 45%;
         padding-left: 0;
-        padding-top: 0
     }
     /* ------------------
         sidebar
@@ -1805,8 +1801,12 @@ p {
     }
 
     .dash-line {
-        margin: 0 0;
-        margin-top: 5px;
+
+
+        margin: 10px 0 30px 0;
+
+
+
     }
 
     .navbar .nav-links {
